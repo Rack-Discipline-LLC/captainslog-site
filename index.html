@@ -9,6 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
+  <style>
+    /* Captain's Log only: soften the screenshot corners (site.css is shared by every site). */
+    .screenshot { border-radius: 1.75rem; }
+    /* Landscape (iPad) screenshot: wider than the portrait phone shots so it isn't dwarfed by them. */
+    .screenshot--wide { max-width: 34rem; }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-56CBRQ414Y"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -27,13 +33,14 @@
       <a href="https://shotclock.rackdisciplineusa.com">Shot Clock</a>
       <a href="https://captainslog.rackdisciplineusa.com" aria-current="page">Captain's Log</a>
       <a href="https://scorekeeper.rackdisciplineusa.com">Scorekeeper</a>
+      <a href="https://blog.rackdisciplineusa.com">Blog</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <img class="hero__product-mark" src="img/Log logo.png" alt="The Captain's Log app icon">
-      <p class="hero__audience">For league captains</p>
+      <p class="hero__audience">For team captains</p>
       <h1>The Captain's Log</h1>
       <p class="hero__lede">Pick better lineups from real match history — track results and player form so match night decisions come from data, not guesswork.</p>
       <div class="hero__actions">
@@ -47,59 +54,86 @@
     </section>
 
     <section class="section">
-      <h2 class="section__title">Built for team captains</h2>
-      <p class="section__intro">Capture results manually or from CSV, then use the data when it matters — match night.</p>
-
-      <article class="feature">
-        <div class="feature__media">
-          <img class="screenshot" src="screenshots/AdminMenu.png" alt="Main menu">
-        </div>
-        <div class="feature__copy">
-          <h3>Main menu</h3>
-          <p>Designed for team captains to track player performance over time and improve how the team plays.</p>
-          <p>Analytics put matchup data at your fingertips. Import matches and results manually or from CSV files.</p>
-        </div>
-      </article>
+      <h2 class="section__title">Built for league play</h2>
+      <p class="section__intro">Designed for team captains to track player performance over time and improve team results.
+      Capture match results manually, import from a CSV, or from your league's public website (LMS only). 
+      Use your data when it matters — match night.</p>
 
       <article class="feature feature--flip">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/MatchesView.png" alt="Matches view">
+          <img class="screenshot" src="screenshots/iphone-01-run-matches.png" alt="Matches view">
         </div>
         <div class="feature__copy">
           <h3>Matches</h3>
-          <p>The database is structured to track performance across seasons — including match results for your teams.</p>
+          <p>Build your database over time. Track results for your teams across multiple seasons and events. 
+            Capture as much (or little) data as you like. Supports Fargo, APA, ABCD and other ranking formats.</p>
         </div>
       </article>
 
       <article class="feature">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/MatchUpsView.png" alt="Match ups view">
+          <img class="screenshot" src="screenshots/iphone-01-matchups.png" alt="Match ups view">
         </div>
         <div class="feature__copy">
           <h3>Match ups</h3>
-          <p>See results for each matchup in every match so you can follow how teammates perform against common opponents.</p>
+          <p>Track results of each matchup in your matches, and follow player performance against their opponents.</p>
         </div>
       </article>
 
       <article class="feature feature--flip">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/PlayerForm.png" alt="Player performance">
+          <img class="screenshot" src="screenshots/iphone-01-analytics-menu.png" alt="Main menu">
         </div>
         <div class="feature__copy">
-          <h3>Player performance</h3>
-          <p>Win/loss record and recent form, with support for BCA (A–D), Fargo Rate, and APA (2–7) ranking systems.</p>
+          <h3>Analytics</h3>
+            <p>Analytics put matchup data at your fingertips. The more data you have, the clearer your view.
+               Multiple views to support decision making on match night.</p>
         </div>
       </article>
 
       <article class="feature">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/TeamMetrics.png" alt="Team metrics">
+          <img class="screenshot" src="screenshots/iphone-01-player-metrics-1.png" alt="Player performance">
         </div>
         <div class="feature__copy">
-          <h3>Player progress</h3>
-          <p>Team-level metrics help measure each player's contribution and keep competition healthy inside the roster.</p>
+          <h3>Player performance</h3>
+          <p>Track player performance over time and provide insights into how the whole team plays.
+             Win/loss record, recent form and rank history, with support for BCA (A–D), Fargo Rate, and APA (2–7) ranking systems.</p>
         </div>
       </article>
+
+      <article class="feature feature--flip">
+        <div class="feature__media">
+          <img class="screenshot" src="screenshots/iphone-01-team-metrics-2.png" alt="Team metrics">
+        </div>
+        <div class="feature__copy">
+          <h3>Team metrics</h3>
+          <p>Team-level metrics measure each player's contribution and keep competition healthy inside your roster.</p>
+          <p>Data sharing is available with a subscription.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__media">
+          <img class="screenshot screenshot--wide" src="screenshots/ipad-01-team-metrics.png" alt="Team metrics on iPad">
+        </div>
+        <div class="feature__copy">
+          <h3>iPad Support</h3>
+          <p>Same data, same features, a clearer view. iCloud keeps your data in sync across your devices.</p>
+        </div>
+      </article>
+
+
+      <article class="feature feature--flip">
+        <div class="feature__media">
+          <img class="screenshot" src="screenshots/duo-01-player-metrics-open.png" alt="Player metrics on iPhone Duo">
+        </div>
+        <div class="feature__copy">
+          <h3>iPhone Duo support</h3>
+          <p>Bigger than an iPhone, smaller than an iPad — the best of both worlds?</p>
+        </div>
+      </article>
+
     </section>
 
     <aside class="sisters">
