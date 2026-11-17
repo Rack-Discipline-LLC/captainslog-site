@@ -3,15 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Captain's Log for league captains — Rack Discipline LLC</title>
-  <meta name="description" content="Pick better lineups from real match history. For league captains.">
+  <title>The Captain's Log: pool league lineup app for team captains</title>
+  <meta name="description" content="Track match results and player form, then pick better lineups on match night. Supports Fargo, APA and ABCD pool leagues. iPhone and iPad.">
+  <link rel="canonical" href="https://captainslog.rackdisciplineusa.com/">
+  <meta name="apple-itunes-app" content="app-id=6467070917">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rack Discipline LLC">
+  <meta property="og:title" content="The Captain's Log: pool league lineup app for team captains">
+  <meta property="og:description" content="Pick better lineups from real match history. Track results and player form so match night decisions come from data, not guesswork.">
+  <meta property="og:url" content="https://captainslog.rackdisciplineusa.com/">
+  <meta property="og:image" content="https://captainslog.rackdisciplineusa.com/img/Log%20logo.png">
+  <meta property="og:image:alt" content="The Captain's Log app icon">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "The Captain's Log",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "iOS, iPadOS",
+    "description": "Track pool league match results and player form so team captains can pick better lineups. Supports Fargo, APA and ABCD ranking systems.",
+    "url": "https://captainslog.rackdisciplineusa.com/",
+    "downloadUrl": "https://apps.apple.com/app/rack-discipline-captainslog/id6467070917",
+    "image": "https://captainslog.rackdisciplineusa.com/img/Log%20logo.png",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Rack Discipline LLC",
+      "url": "https://rackdisciplineusa.com"
+    }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
   <style>
     /* Captain's Log only: soften the screenshot corners (site.css is shared by every site). */
-    .screenshot { border-radius: 1.75rem; }
+    .screenshot { border-radius: 1.75rem; height: auto; }  /* height:auto keeps the aspect ratio now the img tags carry width/height attributes */
     /* Landscape (iPad) screenshot: wider than the portrait phone shots so it isn't dwarfed by them. */
     .screenshot--wide { max-width: 34rem; }
   </style>
@@ -61,7 +91,7 @@
 
       <article class="feature feature--flip">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/iphone-01-run-matches.png" alt="Matches view">
+          <img class="screenshot" width="1320" height="2868" loading="lazy" src="screenshots/iphone-01-run-matches.png" alt="Matches view">
         </div>
         <div class="feature__copy">
           <h3>Matches</h3>
@@ -72,7 +102,7 @@
 
       <article class="feature">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/iphone-01-matchups.png" alt="Match ups view">
+          <img class="screenshot" width="1320" height="2868" loading="lazy" src="screenshots/iphone-01-matchups.png" alt="Match ups view">
         </div>
         <div class="feature__copy">
           <h3>Match ups</h3>
@@ -82,7 +112,7 @@
 
       <article class="feature feature--flip">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/iphone-01-analytics-menu.png" alt="Main menu">
+          <img class="screenshot" width="1320" height="2868" loading="lazy" src="screenshots/iphone-01-analytics-menu.png" alt="Main menu">
         </div>
         <div class="feature__copy">
           <h3>Analytics</h3>
@@ -93,7 +123,7 @@
 
       <article class="feature">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/iphone-01-player-metrics-1.png" alt="Player performance">
+          <img class="screenshot" width="1320" height="2868" loading="lazy" src="screenshots/iphone-01-player-metrics-1.png" alt="Player performance">
         </div>
         <div class="feature__copy">
           <h3>Player performance</h3>
@@ -104,7 +134,7 @@
 
       <article class="feature feature--flip">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/iphone-01-team-metrics-2.png" alt="Team metrics">
+          <img class="screenshot" width="1320" height="2868" loading="lazy" src="screenshots/iphone-01-team-metrics-2.png" alt="Team metrics">
         </div>
         <div class="feature__copy">
           <h3>Team metrics</h3>
@@ -115,7 +145,7 @@
 
       <article class="feature">
         <div class="feature__media">
-          <img class="screenshot screenshot--wide" src="screenshots/ipad-01-team-metrics.png" alt="Team metrics on iPad">
+          <img class="screenshot screenshot--wide" width="2752" height="2064" loading="lazy" src="screenshots/ipad-01-team-metrics.png" alt="Team metrics on iPad">
         </div>
         <div class="feature__copy">
           <h3>iPad Support</h3>
@@ -126,7 +156,7 @@
 
       <article class="feature feature--flip">
         <div class="feature__media">
-          <img class="screenshot" src="screenshots/duo-01-player-metrics-open.png" alt="Player metrics on iPhone Duo">
+          <img class="screenshot" width="2007" height="2853" loading="lazy" src="screenshots/duo-01-player-metrics-open.png" alt="Player metrics on iPhone Duo">
         </div>
         <div class="feature__copy">
           <h3>iPhone Duo support</h3>
